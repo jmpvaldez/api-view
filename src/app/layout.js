@@ -2,6 +2,7 @@ import Script from 'next/script'
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,10 +15,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"  rel="stylesheet" />
+      <Link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"  rel="stylesheet" />
         <Header/>
         {children}
-        <Script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></Script>
+       
         </body>
     </html>
   );
