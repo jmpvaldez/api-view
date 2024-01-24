@@ -1,3 +1,4 @@
+import Script from 'next/script'
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
@@ -16,7 +17,7 @@ export default function RootLayout({ children }) {
       <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"  rel="stylesheet" />
         <Header/>
         {children}
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+        <Script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></Script>
         </body>
     </html>
   );
